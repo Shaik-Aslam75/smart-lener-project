@@ -1,0 +1,156 @@
+/* ===========================
+   Smart Lender AI
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#0d6efd !important;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* Buttons */
+
+.btn{
+    border-radius:30px;
+    padding:10px 25px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Forms */
+
+form{
+    margin-top:20px;
+}
+
+.form-control{
+    border-radius:10px;
+    padding:10px;
+}
+
+.form-control:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.4);
+}
+
+/* Tables */
+
+table{
+    background:white;
+}
+
+thead{
+    background:#0d6efd;
+    color:white;
+}
+
+/* Profile Image */
+
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:5px solid #0d6efd;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    padding:20px;
+    margin-top:40px;
+    text-align:center;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+}
